@@ -1,0 +1,322 @@
+/* ========================================
+Variable
+======================================== */
+/* ========================================
+Foundation
+======================================== */
+:root {
+  --main-color: #fff;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Arial", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
+  font-size: 1.4em;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* ========================================
+Layout
+======================================== */
+.l-header {
+  height: 100vh;
+}
+
+.l-article {
+  margin: auto;
+  padding: 80px 5%;
+  max-width: 1200px;
+}
+
+.l-fashion {
+  padding: 35px 5%;
+  height: 520px;
+  background: url(../images/fashion.jpg) no-repeat center/cover;
+}
+
+@media screen and (min-width: 896px) {
+  .l-fashion {
+    padding: 60px 5%;
+  }
+}
+
+.l-catalog-antique {
+  padding: 30px 5%;
+  background-color: #f5f5f5;
+}
+
+.l-footer__main {
+  background-color: #333;
+}
+
+.l-footer__main-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: auto;
+  padding: 30px 5%;
+  max-width: 1200px;
+}
+
+@media screen and (min-width: 896px) {
+  .l-footer__main-inner {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.l-copyright {
+  padding: 28px;
+}
+
+/* ========================================
+Object/Component
+======================================== */
+.c-logo {
+  width: 120px;
+  height: 40px;
+}
+
+.c-logo__img {
+  width: 100%;
+}
+
+.c-section-title {
+  font-size: 2.4rem;
+  text-align: center;
+}
+
+.c-section-text__wrapper {
+  text-align: center;
+}
+
+.c-section-text__inner {
+  display: inline-block;
+  margin: auto;
+}
+
+.c-more-btn__wrapper {
+  text-align: center;
+}
+
+.c-more-btn__link {
+  display: inline-block;
+  padding: 13px 36px;
+  border: 1px solid #2a2a2a;
+  font-size: 1.2rem;
+}
+
+.c-copyright {
+  display: block;
+  text-align: center;
+}
+
+/* ========================================
+Object/Project
+======================================== */
+.p-header {
+  position: relative;
+  background: url(../images/mainvisual.jpg) no-repeat center/cover;
+}
+
+.p-header .c-logo {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+
+.p-archive-new__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.p-archive-new__item {
+  position: relative;
+  padding-top: 100%;
+  width: 100%;
+  background: url(../images/magazine-archive.jpg) no-repeat center/cover;
+}
+
+.p-archive-new__item:first-child {
+  margin-bottom: 30px;
+}
+
+.p-archive-new__item-inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  padding: 14px 33px;
+  width: 290px;
+  background-color: rgba(112, 112, 112, 0.5);
+  text-align: center;
+}
+
+.p-archive-new__item-title {
+  font-size: 2rem;
+}
+
+.p-archive-new__item-text {
+  font-size: 1.4rem;
+}
+
+@media screen and (min-width: 896px) {
+  .p-archive-new__wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .p-archive-new__item {
+    padding-top: 47.7%;
+    width: 47.7%;
+  }
+  .p-archive-new__item:first-child {
+    margin-bottom: 0;
+  }
+}
+
+.p-catalog-antique__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (min-width: 896px) {
+  .p-catalog-antique__item {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 896px) {
+  .p-catalog-antique__item-img {
+    width: 46.8%;
+  }
+}
+
+.p-catalog-antique__item-text-wrapper {
+  padding-top: 60px;
+}
+
+@media screen and (min-width: 896px) {
+  .p-catalog-antique__item-text-wrapper {
+    width: 46.8%;
+    padding-top: 0;
+  }
+}
+
+.p-catalog-antique__item-text-wrapper:first-child {
+  margin-bottom: 30px;
+}
+
+.p-catalog-antique__item-text:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.p-footer .c-logo {
+  margin: 0 auto 30px;
+}
+
+@media screen and (min-width: 896px) {
+  .p-footer .c-logo {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin: 0;
+  }
+}
+
+.p-footer-navi {
+  color: #fff;
+}
+
+.p-footer-navi:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.p-footer-navi__title {
+  margin-bottom: 10px;
+  font-size: 1.6rem;
+}
+
+.p-footer-navi__item {
+  font-size: 1.2rem;
+}
+
+/* ========================================
+Object/Utility
+======================================== */
+@media screen and (max-width: 895px) {
+  .u-hidden-sp {
+    display: none;
+  }
+}
+
+.u-margin-auto {
+  margin: auto;
+}
+
+.u-margin-bottom-small {
+  margin-bottom: 18px;
+}
+
+.u-margin-bottom-midium {
+  margin-bottom: 40px;
+}
+
+.u-margin-bottom-large {
+  margin-bottom: 50px;
+}
+/*# sourceMappingURL=style.css.map */
